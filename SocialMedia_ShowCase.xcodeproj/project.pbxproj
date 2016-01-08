@@ -12,9 +12,22 @@
 		8FFD4C201C3C4BDF00B5A4A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFD4C1E1C3C4BDF00B5A4A3 /* Main.storyboard */; };
 		8FFD4C221C3C4BDF00B5A4A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FFD4C211C3C4BDF00B5A4A3 /* Assets.xcassets */; };
 		8FFD4C251C3C4BDF00B5A4A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFD4C231C3C4BDF00B5A4A3 /* LaunchScreen.storyboard */; };
+		8FFD4C321C3C741400B5A4A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD4C311C3C741400B5A4A3 /* Constants.swift */; };
+		8FFD4C341C3C74B500B5A4A3 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD4C331C3C74B500B5A4A3 /* MaterialView.swift */; };
+		8FFD4C361C3C89B900B5A4A3 /* MaterialBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD4C351C3C89B900B5A4A3 /* MaterialBtn.swift */; };
+		8FFD4C381C3C8FEA00B5A4A3 /* MaterialTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD4C371C3C8FEA00B5A4A3 /* MaterialTxtField.swift */; };
+		8FFD4C3D1C3C9B4F00B5A4A3 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFD4C3A1C3C9B4F00B5A4A3 /* Bolts.framework */; };
+		8FFD4C3E1C3C9B4F00B5A4A3 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFD4C3B1C3C9B4F00B5A4A3 /* FBSDKCoreKit.framework */; };
+		8FFD4C3F1C3C9B4F00B5A4A3 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FFD4C3C1C3C9B4F00B5A4A3 /* FBSDKLoginKit.framework */; };
+		8FFD4C421C3DB60200B5A4A3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD4C411C3DB60200B5A4A3 /* DataService.swift */; };
+		8FFD4C441C3DE1C200B5A4A3 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD4C431C3DE1C200B5A4A3 /* FeedVC.swift */; };
+		8FFD4C481C3DE2F200B5A4A3 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD4C471C3DE2F200B5A4A3 /* PostCell.swift */; };
+		8FFD4C4A1C3F2DC600B5A4A3 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD4C491C3F2DC600B5A4A3 /* Posts.swift */; };
+		CE9489976A48234F9B58C7B7 /* Pods_SocialMedia_ShowCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4462D75F3E9BA0662C4FD91C /* Pods_SocialMedia_ShowCase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4462D75F3E9BA0662C4FD91C /* Pods_SocialMedia_ShowCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMedia_ShowCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFD4C171C3C4BDF00B5A4A3 /* SocialMedia_ShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMedia_ShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFD4C1A1C3C4BDF00B5A4A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FFD4C1C1C3C4BDF00B5A4A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,19 @@
 		8FFD4C211C3C4BDF00B5A4A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FFD4C241C3C4BDF00B5A4A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FFD4C261C3C4BDF00B5A4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FFD4C311C3C741400B5A4A3 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8FFD4C331C3C74B500B5A4A3 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		8FFD4C351C3C89B900B5A4A3 /* MaterialBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialBtn.swift; sourceTree = "<group>"; };
+		8FFD4C371C3C8FEA00B5A4A3 /* MaterialTxtField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTxtField.swift; sourceTree = "<group>"; };
+		8FFD4C3A1C3C9B4F00B5A4A3 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		8FFD4C3B1C3C9B4F00B5A4A3 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		8FFD4C3C1C3C9B4F00B5A4A3 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		8FFD4C411C3DB60200B5A4A3 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		8FFD4C431C3DE1C200B5A4A3 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		8FFD4C471C3DE2F200B5A4A3 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		8FFD4C491C3F2DC600B5A4A3 /* Posts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		B755C9D6F0CA9049081D72B2 /* Pods-SocialMedia_ShowCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMedia_ShowCase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMedia_ShowCase/Pods-SocialMedia_ShowCase.debug.xcconfig"; sourceTree = "<group>"; };
+		EF895F1A5A5AF1411EBD19A1 /* Pods-SocialMedia_ShowCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialMedia_ShowCase.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialMedia_ShowCase/Pods-SocialMedia_ShowCase.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +55,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FFD4C3D1C3C9B4F00B5A4A3 /* Bolts.framework in Frameworks */,
+				8FFD4C3E1C3C9B4F00B5A4A3 /* FBSDKCoreKit.framework in Frameworks */,
+				8FFD4C3F1C3C9B4F00B5A4A3 /* FBSDKLoginKit.framework in Frameworks */,
+				CE9489976A48234F9B58C7B7 /* Pods_SocialMedia_ShowCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		538A623C91E10DBFAC8DE79C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4462D75F3E9BA0662C4FD91C /* Pods_SocialMedia_ShowCase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FFD4C0E1C3C4BDF00B5A4A3 = {
 			isa = PBXGroup;
 			children = (
 				8FFD4C191C3C4BDF00B5A4A3 /* SocialMedia_ShowCase */,
 				8FFD4C181C3C4BDF00B5A4A3 /* Products */,
+				929E4FD4B44C65EF19C6CDDB /* Pods */,
+				538A623C91E10DBFAC8DE79C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +94,90 @@
 		8FFD4C191C3C4BDF00B5A4A3 /* SocialMedia_ShowCase */ = {
 			isa = PBXGroup;
 			children = (
+				8FFD4C401C3DB5E000B5A4A3 /* Services */,
+				8FFD4C391C3C9B3D00B5A4A3 /* Frameworks */,
+				8FFD4C301C3C740400B5A4A3 /* Constants */,
+				8FFD4C2F1C3C4C4C00B5A4A3 /* Resource */,
+				8FFD4C2C1C3C4C0600B5A4A3 /* Model */,
+				8FFD4C2D1C3C4C0C00B5A4A3 /* View */,
+				8FFD4C2E1C3C4C1600B5A4A3 /* Controller */,
 				8FFD4C1A1C3C4BDF00B5A4A3 /* AppDelegate.swift */,
-				8FFD4C1C1C3C4BDF00B5A4A3 /* ViewController.swift */,
-				8FFD4C1E1C3C4BDF00B5A4A3 /* Main.storyboard */,
 				8FFD4C211C3C4BDF00B5A4A3 /* Assets.xcassets */,
 				8FFD4C231C3C4BDF00B5A4A3 /* LaunchScreen.storyboard */,
 				8FFD4C261C3C4BDF00B5A4A3 /* Info.plist */,
 			);
 			path = SocialMedia_ShowCase;
+			sourceTree = "<group>";
+		};
+		8FFD4C2C1C3C4C0600B5A4A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FFD4C491C3F2DC600B5A4A3 /* Posts.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8FFD4C2D1C3C4C0C00B5A4A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FFD4C1E1C3C4BDF00B5A4A3 /* Main.storyboard */,
+				8FFD4C331C3C74B500B5A4A3 /* MaterialView.swift */,
+				8FFD4C351C3C89B900B5A4A3 /* MaterialBtn.swift */,
+				8FFD4C371C3C8FEA00B5A4A3 /* MaterialTxtField.swift */,
+				8FFD4C471C3DE2F200B5A4A3 /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8FFD4C2E1C3C4C1600B5A4A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8FFD4C1C1C3C4BDF00B5A4A3 /* ViewController.swift */,
+				8FFD4C431C3DE1C200B5A4A3 /* FeedVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8FFD4C2F1C3C4C4C00B5A4A3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		8FFD4C301C3C740400B5A4A3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8FFD4C311C3C741400B5A4A3 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		8FFD4C391C3C9B3D00B5A4A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FFD4C3A1C3C9B4F00B5A4A3 /* Bolts.framework */,
+				8FFD4C3B1C3C9B4F00B5A4A3 /* FBSDKCoreKit.framework */,
+				8FFD4C3C1C3C9B4F00B5A4A3 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8FFD4C401C3DB5E000B5A4A3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8FFD4C411C3DB60200B5A4A3 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		929E4FD4B44C65EF19C6CDDB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B755C9D6F0CA9049081D72B2 /* Pods-SocialMedia_ShowCase.debug.xcconfig */,
+				EF895F1A5A5AF1411EBD19A1 /* Pods-SocialMedia_ShowCase.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FFD4C291C3C4BDF00B5A4A3 /* Build configuration list for PBXNativeTarget "SocialMedia_ShowCase" */;
 			buildPhases = (
+				1CDFDA97DCE618ED21E0E56F /* Check Pods Manifest.lock */,
 				8FFD4C131C3C4BDF00B5A4A3 /* Sources */,
 				8FFD4C141C3C4BDF00B5A4A3 /* Frameworks */,
 				8FFD4C151C3C4BDF00B5A4A3 /* Resources */,
+				A974B66C2C9BA6EB4CAAD6FC /* Embed Pods Frameworks */,
+				F05B2D337BCABFC148157739 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,13 +249,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CDFDA97DCE618ED21E0E56F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A974B66C2C9BA6EB4CAAD6FC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialMedia_ShowCase/Pods-SocialMedia_ShowCase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F05B2D337BCABFC148157739 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialMedia_ShowCase/Pods-SocialMedia_ShowCase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8FFD4C131C3C4BDF00B5A4A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FFD4C381C3C8FEA00B5A4A3 /* MaterialTxtField.swift in Sources */,
+				8FFD4C421C3DB60200B5A4A3 /* DataService.swift in Sources */,
 				8FFD4C1D1C3C4BDF00B5A4A3 /* ViewController.swift in Sources */,
 				8FFD4C1B1C3C4BDF00B5A4A3 /* AppDelegate.swift in Sources */,
+				8FFD4C441C3DE1C200B5A4A3 /* FeedVC.swift in Sources */,
+				8FFD4C481C3DE2F200B5A4A3 /* PostCell.swift in Sources */,
+				8FFD4C321C3C741400B5A4A3 /* Constants.swift in Sources */,
+				8FFD4C4A1C3F2DC600B5A4A3 /* Posts.swift in Sources */,
+				8FFD4C341C3C74B500B5A4A3 /* MaterialView.swift in Sources */,
+				8FFD4C361C3C89B900B5A4A3 /* MaterialBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,8 +422,14 @@
 		};
 		8FFD4C2A1C3C4BDF00B5A4A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B755C9D6F0CA9049081D72B2 /* Pods-SocialMedia_ShowCase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialMedia_ShowCase",
+				);
 				INFOPLIST_FILE = SocialMedia_ShowCase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "swiftgraydesign.SocialMedia-ShowCase";
@@ -258,8 +439,14 @@
 		};
 		8FFD4C2B1C3C4BDF00B5A4A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF895F1A5A5AF1411EBD19A1 /* Pods-SocialMedia_ShowCase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocialMedia_ShowCase",
+				);
 				INFOPLIST_FILE = SocialMedia_ShowCase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "swiftgraydesign.SocialMedia-ShowCase";
@@ -286,6 +473,7 @@
 				8FFD4C2B1C3C4BDF00B5A4A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

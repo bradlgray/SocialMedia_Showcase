@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 import Kingfisher
 
 class PostCell: UITableViewCell {
@@ -17,6 +18,7 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var likeLbl: UILabel!
     
     var post: Posts!
+    var request: Request?
     override func awakeFromNib() {
         super.awakeFromNib()
             }
@@ -28,7 +30,7 @@ class PostCell: UITableViewCell {
 
     }
 
-    func configureCell(post: Posts, img: String) {
+    func configureCell(post: Posts, img: String?) {
         self.post = post
         
          self.descriptionText.text = post.postDescription
@@ -36,8 +38,8 @@ class PostCell: UITableViewCell {
         
         
         if post.imageUrl != nil {
-            showcaseImg.kf_setImageWithURL(NSURL(string: img)!)        }
-        
+           showcaseImg.kf_setImageWithURL(NSURL(string: post.imageUrl!)!)
+            
+        }
     }
-
 }

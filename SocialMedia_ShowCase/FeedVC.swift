@@ -29,6 +29,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIIm
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -40,7 +41,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIIm
         DataService.ds.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
             
             self.posts = []
-            if let snapshots = snapshot.children.allObjects as? [FDataSnapshot] {
+            if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshots {
 //                    print("SNAP: \(snap)")
                     

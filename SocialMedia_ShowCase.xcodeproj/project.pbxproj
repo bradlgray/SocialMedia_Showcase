@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F092CCA1CFB93380047C83F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F092CC91CFB93380047C83F /* GoogleService-Info.plist */; };
 		8FFD4C1B1C3C4BDF00B5A4A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD4C1A1C3C4BDF00B5A4A3 /* AppDelegate.swift */; };
 		8FFD4C1D1C3C4BDF00B5A4A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD4C1C1C3C4BDF00B5A4A3 /* ViewController.swift */; };
 		8FFD4C201C3C4BDF00B5A4A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFD4C1E1C3C4BDF00B5A4A3 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		4462D75F3E9BA0662C4FD91C /* Pods_SocialMedia_ShowCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMedia_ShowCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F092CC91CFB93380047C83F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8FFD4C171C3C4BDF00B5A4A3 /* SocialMedia_ShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMedia_ShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFD4C1A1C3C4BDF00B5A4A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FFD4C1C1C3C4BDF00B5A4A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				8FFD4C211C3C4BDF00B5A4A3 /* Assets.xcassets */,
 				8FFD4C231C3C4BDF00B5A4A3 /* LaunchScreen.storyboard */,
 				8FFD4C261C3C4BDF00B5A4A3 /* Info.plist */,
+				8F092CC91CFB93380047C83F /* GoogleService-Info.plist */,
 			);
 			path = SocialMedia_ShowCase;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			files = (
 				8FFD4C251C3C4BDF00B5A4A3 /* LaunchScreen.storyboard in Resources */,
 				8FFD4C221C3C4BDF00B5A4A3 /* Assets.xcassets in Resources */,
+				8F092CCA1CFB93380047C83F /* GoogleService-Info.plist in Resources */,
 				8FFD4C201C3C4BDF00B5A4A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

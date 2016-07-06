@@ -22,6 +22,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIIm
     var imagePicker: UIImagePickerController!
     
     var posts = [Posts]()
+    //var comments = [Comments]()
     
     
     
@@ -41,6 +42,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIIm
         DataService.ds.REF_POSTS.observeEventType(.Value, withBlock: { snapshot in
             
             self.posts = []
+//            self.comments = = []
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshots {
 //                    print("SNAP: \(snap)")
@@ -48,6 +50,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIIm
                     
                     if let postDict = snap.value as? Dictionary<String, AnyObject> {
                         let key = snap.key
+                        
                         let post = Posts(postKey: key, dictionary: postDict)
                         self.posts.append(post)
                        
@@ -65,11 +68,12 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate, UIIm
         if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell {
             
             var img: String?
+            var username = FIRAuth.auth()?.currentUser?.email
             
             if let url = post.imageUrl {
                 img = url
             }
-            cell.configureCell(post, img: img)
+            cell.configureCell(post, img: img, username: username)
             return cell
         } else {
             return PostCell()

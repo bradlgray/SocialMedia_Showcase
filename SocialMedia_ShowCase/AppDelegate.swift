@@ -10,10 +10,11 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
+import GoogleSignIn
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate{
     
 
     var window: UIWindow?
@@ -21,11 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
        
-         FIRApp.configure()
+      
         
-        return FBSDKApplicationDelegate.sharedInstance()
-        .application(application, didFinishLaunchingWithOptions: launchOptions)
-       
+//        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+//        GIDSignIn.sharedInstance().delegate = self
+        
+        FIRApp.configure()
+        
+         FBSDKApplicationDelegate.sharedInstance()
+            .application(application, didFinishLaunchingWithOptions: launchOptions)
+       return true
        
     }
 
@@ -51,10 +57,62 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        
-        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+    
+    
+    func application(application: UIApplication, openURL url: NSURL, options: [String : AnyObject])
+        -> Bool {
+            return self.application(application,
+                                    openURL: url,
+                                    sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] as! String?,
+                                    annotation: [:])
     }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        if GIDSignIn.sharedInstance().handleURL(url,
+                                                sourceApplication: sourceApplication,
+                                                annotation: annotation) {
+            return true
+        }
+        return FBSDKApplicationDelegate.sharedInstance().application(application,
+                                                                     openURL: url,
+                                                                     sourceApplication: sourceApplication,
+                                                                     annotation: annotation)
+    }
+
+    
+//    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+//        
+//        return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
+//        
+//        
+//        var options: [String: AnyObject] = [UIApplicationOpenURLOptionsSourceApplicationKey: sourceApplication!,
+//                                            UIApplicationOpenURLOptionsAnnotationKey: annotation]
+//        return GIDSignIn.sharedInstance().handleURL(url,
+//                                                    sourceApplication: sourceApplication,
+//                                                    annotation: annotation)
+//        
+//    }
+//    func application(application: UIApplication,
+//                     openURL url: NSURL, options: [String: AnyObject]) -> Bool {
+//        return GIDSignIn.sharedInstance().handleURL(url,
+//                                                    sourceApplication: options[UIApplicationOpenURLOptionsSourceApplicationKey] as? String,
+//                                                    annotation: options[UIApplicationOpenURLOptionsAnnotationKey])
+//    }
+//    func signIn(signIn: GIDSignIn!, didSignInForUser user: GIDGoogleUser!,
+//                withError error: NSError!) {
+//        if let error = error {
+//            print(error.localizedDescription)
+//            return
+//        }
+//        // ...
+//    }
+//    
+//    func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,
+//                withError error: NSError!) {
+//        // Perform any operations when the user disconnects from app here.
+//        // ...
+//    }
+//    
 
 }
 

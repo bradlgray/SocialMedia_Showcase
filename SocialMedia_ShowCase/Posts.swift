@@ -50,7 +50,7 @@ class Posts {
         if let desc = dictionary["description"] as? String {
             self._postDescription = desc
         }
-        self._postRef = DataService.ds.REF_POSTS.childByAppendingPath(self._postKey)
+        self._postRef = DataService.ds.REF_POSTS.child(self._postKey)
         
     }
     

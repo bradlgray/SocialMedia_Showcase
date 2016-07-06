@@ -8,5 +8,6 @@ pod ‘Firebase/Auth’
 pod ‘Firebase/Database’
 pod 'Kingfisher', '~> 1.9'
 pod 'Alamofire', '~> 3.0'
+pod 'GoogleSignIn'
 end
 

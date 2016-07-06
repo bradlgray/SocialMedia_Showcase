@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8F092CCA1CFB93380047C83F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F092CC91CFB93380047C83F /* GoogleService-Info.plist */; };
+		8F276ECF1D1B1656003E7ADC /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F276ECE1D1B1656003E7ADC /* GoogleAuth.swift */; };
+		8F276ED11D1B26C2003E7ADC /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F276ED01D1B26C2003E7ADC /* FirebaseAuth.swift */; };
 		8FFD4C1B1C3C4BDF00B5A4A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD4C1A1C3C4BDF00B5A4A3 /* AppDelegate.swift */; };
 		8FFD4C1D1C3C4BDF00B5A4A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FFD4C1C1C3C4BDF00B5A4A3 /* ViewController.swift */; };
 		8FFD4C201C3C4BDF00B5A4A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFD4C1E1C3C4BDF00B5A4A3 /* Main.storyboard */; };
@@ -30,6 +32,9 @@
 /* Begin PBXFileReference section */
 		4462D75F3E9BA0662C4FD91C /* Pods_SocialMedia_ShowCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialMedia_ShowCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F092CC91CFB93380047C83F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F276ECE1D1B1656003E7ADC /* GoogleAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
+		8F276ED01D1B26C2003E7ADC /* FirebaseAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuth.swift; sourceTree = "<group>"; };
+		8FEF24471D0A261C0033E984 /* SocialMedia_ShowCase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocialMedia_ShowCase-Bridging-Header.h"; sourceTree = "<group>"; };
 		8FFD4C171C3C4BDF00B5A4A3 /* SocialMedia_ShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMedia_ShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FFD4C1A1C3C4BDF00B5A4A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FFD4C1C1C3C4BDF00B5A4A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +167,7 @@
 				8FFD4C3A1C3C9B4F00B5A4A3 /* Bolts.framework */,
 				8FFD4C3B1C3C9B4F00B5A4A3 /* FBSDKCoreKit.framework */,
 				8FFD4C3C1C3C9B4F00B5A4A3 /* FBSDKLoginKit.framework */,
+				8FEF24471D0A261C0033E984 /* SocialMedia_ShowCase-Bridging-Header.h */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -170,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				8FFD4C411C3DB60200B5A4A3 /* DataService.swift */,
+				8F276ECE1D1B1656003E7ADC /* GoogleAuth.swift */,
+				8F276ED01D1B26C2003E7ADC /* FirebaseAuth.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -212,7 +220,7 @@
 		8FFD4C0F1C3C4BDF00B5A4A3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Brad Gray";
 				TargetAttributes = {
@@ -306,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F276ED11D1B26C2003E7ADC /* FirebaseAuth.swift in Sources */,
 				8FFD4C381C3C8FEA00B5A4A3 /* MaterialTxtField.swift in Sources */,
 				8FFD4C421C3DB60200B5A4A3 /* DataService.swift in Sources */,
 				8FFD4C1D1C3C4BDF00B5A4A3 /* ViewController.swift in Sources */,
@@ -316,6 +325,7 @@
 				8FFD4C4A1C3F2DC600B5A4A3 /* Posts.swift in Sources */,
 				8FFD4C341C3C74B500B5A4A3 /* MaterialView.swift in Sources */,
 				8FFD4C361C3C89B900B5A4A3 /* MaterialBtn.swift in Sources */,
+				8F276ECF1D1B1656003E7ADC /* GoogleAuth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +439,7 @@
 			baseConfigurationReference = B755C9D6F0CA9049081D72B2 /* Pods-SocialMedia_ShowCase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,6 +449,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "swiftgraydesign.SocialMedia-ShowCase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialMedia_ShowCase/SocialMedia_ShowCase-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -446,6 +459,7 @@
 			baseConfigurationReference = EF895F1A5A5AF1411EBD19A1 /* Pods-SocialMedia_ShowCase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "swiftgraydesign.SocialMedia-ShowCase";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SocialMedia_ShowCase/SocialMedia_ShowCase-Bridging-Header.h";
 			};
 			name = Release;
 		};

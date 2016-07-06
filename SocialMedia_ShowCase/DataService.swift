@@ -31,14 +31,23 @@ class DataService {
         return _REF_USERS
     }
     var REF_USERS_CURRENT: FIRDatabaseReference {
-        let uid = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as? String
-        let user = URL_BASE.child("Users").child(uid!)
+        let uid = NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) as! String
+//        let user = URL_BASE.child("Users").child(uid!)
+        let user = _REF_USERS.child(uid)
         return user
     }
     
     func createFirebaseuser(uid: String, user: Dictionary<String, String>) {
         REF_USERS.child(uid).updateChildValues(user)
     }
+    // Add user data to the DB.
+    func saveUserData(userData: Dictionary<String, String>) {
+        // Ensure the user has a uid before attempting to save their data.
+        if (NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil) {
+            REF_USERS_CURRENT.updateChildValues(userData)
+        }
+    }
+
 }
 
 

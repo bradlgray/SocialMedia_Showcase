@@ -18,6 +18,7 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var descriptionText: UITextView!
     @IBOutlet weak var likeLbl: UILabel!
     @IBOutlet weak var likeImg: UIImageView!
+    @IBOutlet weak var username: UILabel!
     
      var post: Posts?
     var request: Request?
@@ -39,13 +40,16 @@ class PostCell: UITableViewCell {
 
     }
 
-    func configureCell(post: Posts, img: String?) {
+    func configureCell(post: Posts, img: String?, username: String?) {
         
         self.post = post
+        self.username.text = username
+        
         
          self.descriptionText.text = post.postDescription
         self.likeLbl.text = "\(post.likes)"
-        likeRef = DataService.ds.REF_USERS_CURRENT.childByAppendingPath("likes").childByAppendingPath(post.postKey)
+        likeRef = DataService.ds.REF_USERS_CURRENT.child("likes").child(post.postKey)
+        
         
         
         if post.imageUrl != nil {
@@ -59,7 +63,7 @@ class PostCell: UITableViewCell {
                 self.likeImg.image = UIImage(named: "heart-empty")
                 
             } else {
-               
+               self.likeImg.image = UIImage(named: "heart-full")
             }
         
         })

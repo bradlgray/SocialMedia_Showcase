@@ -37,6 +37,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
+        
         if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil {
             performSegueWithIdentifier(SEGUE_LOGGEDIN, sender: nil)
         }
@@ -62,7 +63,11 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     @IBAction func googleSignIn(sender: AnyObject) {
         
           GIDSignIn.sharedInstance().signIn()
-        goToFeedVC()
+        
+        
+           
+        
+       goToFeedVC()
     }
     @IBAction func loginBtn(sender: AnyObject) {
         let facebookLogin = FBSDKLoginManager()
@@ -178,7 +183,7 @@ class ViewController: UIViewController, GIDSignInUIDelegate {
     func goToFeedVC() {
         
        self.performSegueWithIdentifier(SEGUE_LOGGEDIN, sender: nil)
-    
+        
     }
     
 }

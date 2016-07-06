@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## Alamofire
 
-Copyright (c) 2014–2015 Alamofire Software Foundation (http://alamofire.org/)
+Copyright (c) 2014-2016 Alamofire Software Foundation (http://alamofire.org/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -30,11 +30,11 @@ Copyright 2016 Google Inc.
 
 ## FirebaseAnalytics
 
-Copyright 2016 Google Inc.
+Copyright 2016 Google
 
 ## FirebaseAuth
 
-Copyright 2016 Google Inc. All Rights Reserved.
+Copyright 2016 Google
 
 ## FirebaseDatabase
 
@@ -57,6 +57,10 @@ Copyright 2015 Google Inc.
 Copyright 2015 Google Inc.
 
 ## GoogleNetworkingUtilities
+
+Copyright 2015 Google Inc.
+
+## GoogleParsingUtilities
 
 Copyright 2015 Google Inc.
 
